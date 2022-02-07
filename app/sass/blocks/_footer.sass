@@ -1,0 +1,49 @@
+footer
+    padding: 60px 0
+    +mq($max-width: 767px)
+        padding: 20px 0
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        +mq($max-width: 768px)
+            flex-direction: column
+            gap: 10px
+        .logo
+            display: flex
+            align-items: center
+        nav
+            ul
+                display: flex
+                align-items: center
+                gap: 20px
+                +mq($max-width: 1024px)
+                    gap: 5px
+                +mq($max-width: 768px)
+                    gap: 10px
+                +mq($max-width: 767px)
+                    flex-direction: column
+                li
+                    a
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 24px
+                        color: #222222
+                        display: block
+                        text-transform: uppercase
+                        +mq($max-width: 1024px)
+                            font-size: 14px
+                        +mq($max-width: 768px)
+                            font-size: 16px
+        .footer__contacts
+            display: flex
+            gap: 6px
+            align-items: center
+            a
+                display: flex
+                align-items: center
+            .footer__tell
+                color: black
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px

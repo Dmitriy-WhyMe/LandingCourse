@@ -1,0 +1,241 @@
+// main page elements
+body
+	font-size: 16px
+	line-height: 24px
+	color: #222222
+	font-family: 'Montserrat', sans-serif
+	font-weight: 400
+	background: white
+	overflow-x: hidden
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	max-width: 1170px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	+mq($max-width: 1200px)
+		padding: 0 15px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+
+h2
+	font-weight: bold
+	font-size: 45px
+	line-height: 50px
+	+mq($max-width: 767px)
+		font-size: 38px
+	+mq($max-width: 413px)
+		font-size: 35px
+	+mq($max-width: 374px)
+		font-size: 30px
+		line-height: 30px
+.flex
+	display: flex
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	max-width: 170px
+	width: 100%
+	height: 49px
+	font-weight: 600
+	font-size: 16px
+	line-height: 24px
+	color: white
+	background: #C31D2C
+	border-radius: 7px
+
+.main-video 
+	position: relative
+	max-height: 645px
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 60px
+	+mq($max-width: 767px)
+		margin-bottom: 20px
+	&__img
+		max-width: 100%
+		width: 100%
+		border-radius: 15px
+	&__bg
+		position: absolute
+		z-index: 1
+		background: rgba(0, 0, 0, 0.3)
+		width: 100%
+		height: 100%
+		top: 0
+		border-radius: 15px
+		+mq($max-width: 1024px)
+			max-width: 994px
+		+mq($max-width: 768px)
+			max-width: 738px
+		+mq($max-width: 767px)
+			max-width: 394px
+		+mq($max-width: 413px)
+			max-width: 355px
+		+mq($max-width: 374px)
+			max-width: 300px
+	a
+		position: absolute
+		z-index: 2
+		&__absolute
+			width: 60px
+			height: 60px
+
+.curriculum
+	margin-bottom: 60px
+	gap: 33px
+	+mq($max-width: 768px)
+		flex-direction: column
+	+mq($max-width: 767px)
+		margin-bottom: 20px
+	&__text-dop
+		margin-bottom: 26px
+		font-weight: 600
+	&__text
+		h2
+			margin-bottom: 23px
+		p
+			max-width: 567px
+			width: 100%
+			margin-bottom: 10px
+			+mq($max-width: 768px)
+				max-width: 100%
+	img
+		border-radius: 20px
+		max-width: 570px
+		width: 100%
+		+mq($max-width: 768px)
+			margin: 0 auto
+
+.tarif 
+	background: #F7F7F7
+	padding-top: 50px
+	padding-bottom: 57px
+	+mq($max-width: 767px)
+		padding: 20px 0
+	h2
+		margin-bottom: 24px
+	.tarif__row
+		display: flex
+		align-items: center
+		gap: 119px
+		margin-bottom: 28px
+		margin-bottom: 20px
+		+mq($max-width: 768px)
+			flex-direction: column
+			gap: 10px
+			align-items: baseline
+		&-one
+			max-width: 617px
+			+mq($max-width: 768px)
+				max-width: 100%
+			.tarif__text
+				max-width: 590px
+				+mq($max-width: 768px)
+					max-width: 100%
+		&-two
+			max-width: 617px
+			+mq($max-width: 768px)
+				max-width: 100%
+			.tarif__text
+				max-width: 590px
+				+mq($max-width: 768px)
+					max-width: 100%
+		.flex
+			gap: 10px
+			+mq($max-width: 1024px)
+				max-width: 50%
+			+mq($max-width: 768px)
+				max-width: 100%
+			svg
+				min-width: 22px
+				min-height: 22px
+			span
+				font-weight: 600
+				font-size: 22px
+				line-height: 24px
+				color: #182F65
+		
+.about
+	padding-top: 60px
+	padding-bottom: 60px
+	display: flex
+	align-items: center
+	gap: 34px
+	+mq($max-width: 768px)
+		flex-direction: column-reverse
+		align-items: baseline
+	+mq($max-width: 767px)
+		padding: 20px 15px
+	.about__text
+		h2
+			margin-bottom: 23px
+		p
+			margin-bottom: 10px
+			max-width: 568px
+	img
+		border-radius: 20px
+		max-width: 570px
+		width: 100%
+		+mq($max-width: 768px)
+			margin: 0 auto
+
+.slider
+	position: relative
+	padding-top: 50px
+	padding-bottom: 72px
+	background: #F7F7F7
+	+mq($max-width: 767px)
+		padding: 20px 0
+	.container
+		overflow: hidden
+		h2
+			margin-bottom: 31px
+.swiper-container
+	margin: 0 auto
+	max-width: 1170px
+	overflow: hidden
+	+mq($max-width: 1024px)
+		padding: 0 15px
+.mySwiper
+	position: relative
+	
+.swiper-slide
+	max-width: 270px
+	width: 100%
+	height: 118px
+	display: flex
+	align-items: center
+	justify-content: center
+	background: white
+	border: 1px solid #D9D9D9
+	border-radius: 10px
+	+mq($max-width: 767px)
+		max-width: 100%
+	img
+		+mq($max-width: 1024px)
+			max-width: 185px
+.swiper-pagination
+	width: 100%
+	top: 59%
+	max-width: 1170px
+	left: 0
+	right: 0
+	margin: 0 auto
+.swiper-button-prev
+	left: -50px
+.swiper-button-next
+	right: -50px
+.swiper-button-next, .swiper-button-prev
+	color: #182F65
